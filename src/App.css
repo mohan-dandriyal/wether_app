@@ -1,7 +1,65 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
+h2 {
+  font-family: cursive;
+    font-weight: 600;
+    color: #741c1c;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 400px;
+}
+
+.card h4 {
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+input{
+  padding: 10px;
+    border-radius: 7px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 400px;
+    outline: none;
+    border: none;
+}
+
+button {
+  padding: 10px;
+    border-radius: 7px;
+    box-shadow: rgb(201 199 199 / 20%) 0px 7px 29px 0px;
+    width: 405px;
+    outline: none;
+    border: none;
+    margin: 16px;
+    color: #464646;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 17px;
+    width: fit-content;
+    padding: 10px 38px;
+}
+
+
+
+@media screen and (max-width:500px){
+  .App {
+    padding: 0px 30px;
+  }
+
+  input, .card{
+    width: 100%;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
